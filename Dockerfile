@@ -4,6 +4,13 @@
 FROM ubuntu:16.04
 
 RUN apt-get update \
+    && apt-get install -y \
+            libkrb5-dev \
+            libssl-dev \
+            libsasl2-dev \
+            libsasl2-modules-gssapi-mit \
+
+RUN apt-get update \
     && DEBIAN_FRONTEND=noninteractive \
     apt-get install -y \
             vim \
@@ -11,10 +18,6 @@ RUN apt-get update \
             python3 \
             python3-pip \
             libapache2-mod-auth-kerb \
-            libkrb5-dev \
-            libssl-dev \
-            libsasl2-dev \
-            libsasl2-modules-gssapi-mit \
             krb5-kdc \
             krb5-admin-server
 

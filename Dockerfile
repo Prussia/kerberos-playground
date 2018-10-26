@@ -11,6 +11,10 @@ RUN apt-get update \
             python3 \
             python3-pip \
             libapache2-mod-auth-kerb \
+            libkrb5-dev \
+            libssl-dev \
+            libsasl2-dev \
+            libsasl2-modules-gssapi-mit \
             krb5-kdc \
             krb5-admin-server
 

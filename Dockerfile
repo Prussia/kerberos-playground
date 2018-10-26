@@ -8,7 +8,7 @@ RUN apt-get update \
             libkrb5-dev \
             libssl-dev \
             libsasl2-dev \
-            libsasl2-modules-gssapi-mit \
+            libsasl2-modules-gssapi-mit 
 
 RUN apt-get update \
     && DEBIAN_FRONTEND=noninteractive \
